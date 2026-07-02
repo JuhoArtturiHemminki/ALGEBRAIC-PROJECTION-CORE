@@ -20,7 +20,11 @@ By utilizing structural symmetries within two's complement binary representation
 
 The operational core of the architecture is governed by a unified linear coordinate reflection tensor, designed to translate relational dynamic bounds into a constant-time invariant profile without resorting to branching or memory-mapped indexing:
 
-$$\text{R} = \text{C}_{\text{base}} + (\text{Mask} \cdot \Delta \text{C})$$
+# <sub/>
+
+# <h1>$$\text{R} = \text{C}_{\text{base}} + (\text{Mask} \cdot \Delta \text{C})$$</h1>
+
+# <sub/>
 
 This formulation utilizes the natural electrophysical properties of bitwise architectures to force mathematical vectors to mirror the target system state simultaneously. It completely avoids the instruction-level serialization penalties often introduced by hardware conditional select primitives (`CSEL` or `CMOV`) by operating purely via linear scaling operations within the standard Integer Arithmetic Logic Unit (ALU).
 
