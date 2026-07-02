@@ -43,7 +43,8 @@ Traditional conditional blocks require the microprocessor to compute a compariso
 
 The Algebraic Projection Matrix leverages arithmetic sign-bit expansion to resolve states deterministically. By isolating a targeting bit and arithmetically shifting it across the entire width of a 32-bit or 64-bit hardware register, the processor populates the mask instantly using two's complement rules:
 
-Signed Bit-Field Isolation:  [00000000 00000000 00000000 00000001] (State Bit)Arithmetic Shift Left/Right: [11111111 11111111 11111111 11111111] (m_lock = -1)
+Signed Bit-Field Isolation:  [00000000 00000000 00000000 00000001] (State Bit)
+Arithmetic Shift Left/Right: [11111111 11111111 11111111 11111111] (m_lock = -1)
 
 The selection of the state is resolved purely via bitwise arithmetic (`AND`, `ADD`, `XOR`). The branch predictor is completely neutralized, guaranteeing an absolute flat-line execution profile down to the nanosecond level.
 
